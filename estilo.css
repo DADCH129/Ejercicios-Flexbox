@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #025259;
+    color: #F4E2DE;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+.nav {
+    background-color: #007172;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.nav a {
+    color: #F4E2DE;
+    text-decoration: none;
+    padding: 10px 5px;
+    border-bottom: 1px solid #F4E2DE;
+    text-align: center;
+}
+
+.contenido {
+    background-color: #F4E2DE;
+    flex: 6;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: #F29325;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.titulo, .pie {
+    background-color: #D94F04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4E2DE;
+}
+
+.titulo {
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cuerpo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.pie {
+    height: 30px;
+    font-size: 1em;
+}
+
+@media (max-width: 960px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}
